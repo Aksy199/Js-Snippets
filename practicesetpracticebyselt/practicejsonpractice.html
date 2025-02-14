@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #my-button {
+        height: 45px;
+        width: 45px;
+        border: none;
+        border-radius: 15px;
+        text-align: center;
+        background-color: firebrick;
+      }
+      body {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="my-button" onclick="buttonPressed()"></button>
+    <button id="reset-button" onclick="clearLS()">reset</button>
+    <script>
+      let noOfClicks = 0;
+      function buttonPressed() {
+        noOfClicks++;
+
+        let button = document.querySelector("#my-button");
+        counter();
+      }
+      let button = document.querySelector("#my-button");
+
+      function counter() {
+        if (noOfClicks == 0) {
+          button.innerText = 0;
+        } else {
+          button.innerText = noOfClicks;
+        }
+      }
+      function clearLS() {
+        let reset = document.querySelector("#reset-button");
+
+        reset = localStorage.clear(noOfClicks);
+        localStorage.setItem("noOfClicks", 0);
+        noOfClicks = 0;
+        button.innerText = 0;
+      }
+
+      counter();
+    </script>
+  </body>
+</html>

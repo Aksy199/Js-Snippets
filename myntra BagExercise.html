@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myntra Bag</title>
+    <style>
+         .qw{
+            
+            padding: 5px 15px;
+            color: black;
+            background-color: lightgreen;
+            border-radius: 10px;
+        }
+        .ty{
+            
+            padding: 5px 15px;
+            color: black;
+            background-color: lightgreen;
+            border-radius: 10px;
+        }
+        #i7{
+            
+            padding: 5px 35px;
+            color: black;
+            border: 2px solid black;
+            border-radius: 10px;
+            text-transform: uppercase;
+        }
+        .qw:hover{
+            height: 32px;
+            color: black;
+            background-color: rebeccapurple;
+        }
+        #i7:hover{
+            height: 32px;
+            color: black;
+            background-color: gold;
+        }
+        .ty:hover{
+            height: 32px;
+            color: black;
+            background-color: yellow;
+        }
+        #cart-summary{
+            position: absolute;
+            top: 50px;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <button class="qw" 
+    onclick="cartQuantity +=1;
+        document.querySelector('#cart-summary').innerText = `Your Bag has ${cartQuantity} items`;
+        
+    "> Add to Bag</button>
+    <button  id="i7" 
+    onclick="cartQuantity-=1;
+        document.querySelector('#cart-summary').innerText = `Your Bag has ${cartQuantity} items`;
+    
+    ">
+      move to WISHLIST</button>
+        
+    <button class="ty" 
+         onclick="cartQuantity+=2;
+         document.querySelector('#cart-summary').innerText = `Your Bag has ${cartQuantity} items`;
+        
+         "> Sale 1+1</button>
+         <hr>
+
+
+
+    <h1 id="cart-summary"> </h1>
+
+
+    <script>
+        let cartQuantity = 0;
+        
+        document.querySelector('#cart-summary').innerText = `Your Bag has ${cartQuantity} items`;
+    </script>
+    
+</body>
+</html>

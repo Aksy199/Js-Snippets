@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <header id="gandu"></header>
+</head>
+<body>
+    <script>
+        let obj={
+            'message': 'Good job',
+            'status' : 'complete',
+        };
+        console.log(obj);
+        let {message,status}= obj;
+        console.log(message);
+        console.log(status);
+        document.querySelector("#gandu").
+        innerText = message + status ;
+
+//         function isIdenticalP(product1,product2)
+//         {   
+
+// if(product1== product2){
+//     return true;
+// }
+        
+
+// else if   (product1.name===product2.name &&
+//         product2.size=== product1.size ){
+//             return true;
+//         }
+//         else{
+//             return false;
+//         }
+
+
+//     };
+
+        let product1={
+            size: 'M',
+            name : 'Jeans' ,
+            'delivery-time' :'sameday'
+        };
+        let product2={
+            size: 'M',
+            name : 'Jeans' ,
+            'delivery-time' :'sameday'
+        };
+
+
+        console.log(isIdenticalP(product2,''));
+        console.log(isIdenticalP(product1,''));
+        console.log(isIdenticalP(product2,product2));
+        console.log(isIdenticalP(product2,product1));
+        console.log(isIdenticalP(product1,product2));
+        
+
+    </script>
+    
+</body>
+</html>

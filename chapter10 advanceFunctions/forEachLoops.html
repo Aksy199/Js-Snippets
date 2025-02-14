@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+
+        let arr  = [1,2,3,4,5];
+        let squares = arr.map(num => num*num);
+        console.log(squares);
+
+
+
+
+
+        // let arr= [3,5,7,9];
+        // for(let i=0;i<arr.length; i++){
+        //     console.log(arr[i]); ////// prints the array
+        // }
+
+        // arr.forEach((num)=> console.log(num));//// prints the array
+
+       // let arr =[1,2,3,4,5,6,7,8,9];
+        // arr.forEach(num => {      ///diadvantage of for each 
+                                     ////// no st forward way to breakout from foreach loops
+        //     if(num===5){
+        //         return;         /////return works as continue here
+
+        //     }
+        //     console.log(`visited:${num}`);
+        // });
+
+        // function search(arr, num){
+        //     for(let i=0; i < arr.length; i++){
+        //         if(arr[i]===num){
+        //             console.log(`element found at :${i+1}`);
+        //             return;
+        //         }
+        //     }
+        //     console.log('Element was not found');
+
+        // }
+
+        // search(arr, 7);
+
+
+       // let arr =[1,2,3,4,5,6,7,8,9];
+        // let odds = arr.filter((num,index) => {
+        //     if(num%2===1){
+        //         return true;
+        //     }
+        //     else{
+        //         return false;
+        //     }
+        //  });
+        //  console.log(odds);
+
+
+
+         /////this could be written as 
+
+        //  let newodds = arr.filter((num,index) =>{
+        //     return num%2===1;
+        //  });
+
+        //  console.log(newodds);
+
+         /////this could be written as 
+
+        //  let newodds = arr.filter((num,value) =>
+        //   num%2===1);
+
+        // console.log(newodds);
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<head>
+    
+    <title>Practice Set Loops</title>
+</head>
+<body>
+        <script>
+
+            1
+            let array = [5, 7];
+            array.push(34);
+            array.unshift(21);
+            console.log(array); //[21,5,7,34];
+
+
+            2
+           // let num = [5, 7, 67, 34,21,8];
+            function index(num, pos){
+                return num[pos-1];
+            }
+            console.log(index(num, [3]));
+
+
+            3
+          //  let num = [5, 7, 67, 34,21,8];
+            num2= num.slice();
+            console.log(num2);
+
+            4&5
+
+            function isPrime(num){
+                for(  let i=2; i< num ; i ++){
+                   if( num % i === 0){
+                    return false ; ///is a prime no if it is divisible by 2
+                }
+                    
+                    else
+                   {
+                    return true;}
+
+                    }
+
+              };
+
+            let num= 2;
+            let i = 0;
+            while(true){
+                if (isPrime(num)){
+                    console.log(num);
+                    i++;
+                }; 
+                if(i>=15){
+                    break;
+                }
+                num++;
+                };
+            
+
+
+            //6
+              for( let i= 10; i> 0; i--){
+                console.log(i);
+              }
+              for( let i= 0; i< 10; i++){
+                console.log(10-i);
+              }
+
+             //7
+
+             let nums = [1,-9 ,5,6,-98];
+             for (let i= 0; i< nums.length; i++){
+                if(nums[i]<0) continue;
+                console.log(nums[i]);
+             }/// printing non negative nos
+
+            let arr =[ 'KG' , 'Coding', 'Javascript ' ,'course','is', 'Best' ];
+            let result = '';
+            for(let i=0; i<arr.length; i++){
+                result += `${arr[i] + ' '}` ;
+            }
+            console.log(result);
+            console.log(arr.join(' '));
+
+
+        </script>
+</body>
+</html>
